@@ -25,7 +25,7 @@ namespace SpatialPartitionPattern
         float mapWidth = 50f;
         int cellSize = 10;
 
-        int numberOfSoldiers = 100;
+        [SerializeField] int numberOfSoldiers = 100;
 
         Grid grid;
 
@@ -82,7 +82,8 @@ namespace SpatialPartitionPattern
         private void LateUpdate()
         {
             text.text = seekMode ? "Partitioned Method:\n" : "Slow Method:\n" ;
-            text.text += Time.deltaTime.ToString();
+            text.text += (1f / Time.deltaTime) + " FPS\n";
+            text.text += (1000 * Time.deltaTime) + " milliseconds";
         }
 
         Soldier FindClosestEnemySlow(Soldier soldier) {

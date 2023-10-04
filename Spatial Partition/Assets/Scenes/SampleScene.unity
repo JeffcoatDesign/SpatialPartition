@@ -514,7 +514,7 @@ MonoBehaviour:
   closestEnemyMat: {fileID: 2100000, guid: 405a4b7a3398baa49b17b6df945ebb3e, type: 2}
   enemyParent: {fileID: 1199543979}
   friendlyParent: {fileID: 996090975}
-  numberOfSoldiers: 100
+  numberOfSoldiers: 500
 --- !u!1 &421738307
 GameObject:
   m_ObjectHideFlags: 0
